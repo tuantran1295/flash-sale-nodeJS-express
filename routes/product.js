@@ -12,7 +12,8 @@ router.get('/', function(req, res, next) {
             console.log(rows);
             const d = new Date();
             let hour = d.getHours();
-            let isValidTime = (hour > 9 && hour < 11) ? true : false
+            // let isValidTime = (hour > 9 && hour < 11) ? true : false
+            let isValidTime = true;
             let data = {
                 product_name: rows[0].name,
                 price: rows[0].price,
